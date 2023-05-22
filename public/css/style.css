@@ -74,3 +74,40 @@ img {
     overflow: hidden;
     border-radius: var(--border-radius);
 }
+
+/* Main Header */
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding-top: 10px;
+    grid-template-areas: 
+    "logo button"
+    "menu menu"
+    ;
+}
+
+.header__logo {
+    grid-area: logo;
+    font-weight: 800;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.header__logo:hover {
+    text-decoration: underline;
+}
+
+.header__nav {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+}
+
+.header__button {
+    grid-area: button;
+    display: flex;
+    justify-content: end;
+}
+
